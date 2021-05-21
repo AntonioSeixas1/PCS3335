@@ -1,0 +1,10 @@
+v 4
+file . "circuito_contador_comparador.vhd" "67e98e8e438a23388052bea838121cbf7249ee1f" "20210521153703.738":
+  entity circuito_contador_comparador at 10( 391) + 0 on 15;
+  architecture structural of circuito_contador_comparador at 24( 702) + 0 on 16;
+file . "comparador_2bits.vhd" "f6dc09691fe44c5e332bd6c7245508f6bccbda67" "20210521153505.188":
+  entity comparador_2bits at 1( 0) + 0 on 11;
+  architecture arch of comparador_2bits at 11( 192) + 0 on 12;
+file . "contador_hexadecimal.vhd" "e2aa619cc7e9dc08f88a1da892f0d5f4eb49135e" "20210521153518.297":
+  entity contador_hexadecimal at 1( 0) + 0 on 13;
+  architecture arch of contador_hexadecimal at 14( 328) + 0 on 14;
