@@ -107,6 +107,7 @@ begin
     db_contagem1 <= s_contagem1;
     saida <= s_saida;
     pronto <= s_pronto;
+    db_estado <= s_estado;
     fim <= s_fim1;
 
     end architecture;
