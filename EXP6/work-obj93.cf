@@ -1,16 +1,16 @@
 v 4
-file . "fluxo_dados.vhd" "abf915bbda957f90f1bdcd47e56e677c3f6ba685" "20210523012925.922":
-  entity fluxo_dados at 10( 380) + 0 on 17;
-  architecture structural of fluxo_dados at 28( 870) + 0 on 18;
-file . "comparador_2bits.vhd" "f6dc09691fe44c5e332bd6c7245508f6bccbda67" "20210523012801.145":
-  entity comparador_2bits at 1( 0) + 0 on 13;
-  architecture arch of comparador_2bits at 11( 192) + 0 on 14;
-file . "maquina_estados.vhd" "90c75186d9af0f8f04978429cbe61018f86c0c83" "20210521185905.688":
-  entity maquina_estados at 7( 230) + 0 on 11;
-  architecture comportamental of maquina_estados at 21( 667) + 0 on 12;
-file . "contador_hexadecimal.vhd" "e2aa619cc7e9dc08f88a1da892f0d5f4eb49135e" "20210523012817.914":
-  entity contador_hexadecimal at 1( 0) + 0 on 15;
-  architecture arch of contador_hexadecimal at 14( 328) + 0 on 16;
 file . "circuito4.vhd" "da62923be9caa2409a05829f25ebd7c93888a72b" "20210523144801.592":
   entity circuito4 at 11( 363) + 0 on 21;
   architecture structural of circuito4 at 32( 997) + 0 on 22;
+file . "contador_hexadecimal.vhd" "e2aa619cc7e9dc08f88a1da892f0d5f4eb49135e" "20210523012817.914":
+  entity contador_hexadecimal at 1( 0) + 0 on 15;
+  architecture arch of contador_hexadecimal at 14( 328) + 0 on 16;
+file . "maquina_estados.vhd" "90c75186d9af0f8f04978429cbe61018f86c0c83" "20210521185905.688":
+  entity maquina_estados at 7( 230) + 0 on 11;
+  architecture comportamental of maquina_estados at 21( 667) + 0 on 12;
+file . "comparador_2bits.vhd" "f6dc09691fe44c5e332bd6c7245508f6bccbda67" "20210523012801.145":
+  entity comparador_2bits at 1( 0) + 0 on 13;
+  architecture arch of comparador_2bits at 11( 192) + 0 on 14;
+file . "fluxo_dados.vhd" "ffb33c69a32132fb19b5fe02f023beae29579668" "20210525192944.658":
+  entity fluxo_dados at 10( 380) + 0 on 23;
+  architecture structural of fluxo_dados at 28( 870) + 0 on 24;

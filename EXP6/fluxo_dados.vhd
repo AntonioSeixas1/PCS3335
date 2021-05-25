@@ -73,6 +73,7 @@ begin
         igual => condicao1
     );
 
+    db_contagem1 <= count;
 
 end architecture;
 
