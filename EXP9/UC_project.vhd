@@ -2,7 +2,7 @@
 --! @file UC_project.vhd
 --! @author Antonio Lago Araújo Seixas <antonioseixas00@usp.br>
 --! @author Lucas Moreira Oliveira <lucasmoreiraoliveira@usp.br>
---! @brief Control unity for the project Autonumus iluminations System
+--! @brief Control unity for the project Autonumus ilumination System
 --! @date 2021-06-18
 -----------------------------------------------------------------------
 
