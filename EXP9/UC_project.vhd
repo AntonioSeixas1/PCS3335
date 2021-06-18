@@ -14,6 +14,7 @@ entity UC_project is
         Clock, Reset:               	            in std_logic;
         Sensor_presenca:                            in std_logic;
         Fim_cont:                                   in std_logic;
+        Potencia                                    in std_logic_vector(1 downto 0);
         Enable_cont:                                out std_logic;
         Liga_luminaria:                             out std_logic;
         db_state:                                    out std_logic_vector(1 downto 0)
@@ -40,7 +41,7 @@ architecture comportamental of UC_project is
         process(Sensor_presenca, fim_cont, Eatual)
         begin
             case Eatual is
-                when desligado_st =>        if Sensor_presenca='1'
+                when desligado_st =>        if Sensor_presenca='1' and Potencia /= "00"
                                             then Eprox <= ligado_st;
                                             else Eprox<= desligado_st;
                                             end if;
