@@ -19,12 +19,12 @@ entity UC_project is
         Enable_reg:                                 out std_logic;
         Enable_cont:                                out std_logic;
         Liga_luminaria:                             out std_logic;
-        db_state:                                   out std_logic_vector(1 downto 0)
+        db_state:                                   out std_logic_vector(2 downto 0)
         );                	            
 end entity;
 
 architecture comportamental of UC_project is
-    type Tipo_estado is (inicial_st, carga_st, desligado_st, ligado_st, contando_st);
+    type Tipo_estado is (inicial_st, carrega_st, desligado_st, ligado_st, contando_st);
     signal Eatual, Eprox: Tipo_estado;
 
     begin
@@ -43,11 +43,11 @@ architecture comportamental of UC_project is
         process(Sensor_presenca, Fim_cont, Confirma, Eatual)
         begin
             case Eatual is
-                when inicial_st =>          Eprox <= carga_st;
+                when inicial_st =>          Eprox <= carrega_st;
 
-                when carga_st =>            if confirma = '1'
+                when carrega_st =>            if confirma = '1'
                                             then Eprox <= desligado_st;
-                                            else Eprox <= carga_st;
+                                            else Eprox <= carrega_st;
                                             end if;
 
                 when desligado_st =>        if Sensor_presenca='1' and Potencia /= "00"
@@ -82,13 +82,19 @@ architecture comportamental of UC_project is
                             '0' when others;
 
         with Eatual select
+        Enable_reg <= '1' when carrega_st,
+                      '0' when others;
+
+        with Eatual select
         Enable_cont <= '1' when contando_st, '0' when others;
 
         
 
         with Eatual select
-        db_state <= "00" when desligado_st,
-                     "01" when ligado_st,
-                     "10" when contando_st,
-                     "11" when others;
+        db_state <= "000" when inicial_st,
+                    "001" when carrega_st,
+                    "010" when desligado_st,
+                    "011" when ligado_st,
+                    "100" when contando_st,
+                    "111" when others;
 end architecture;
