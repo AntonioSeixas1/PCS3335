@@ -15,7 +15,8 @@ entity UC_project is
         Sensor_presenca:                            in std_logic;
         Confirma:                                   in std_logic;
         Fim_cont:                                   in std_logic;
-        Potencia:                                   in std_logic_vector(1 downto 0);
+        Luminosidade:                               in std_logic_vector(1 downto 0);
+        Reset_cont:                                 out std_logic;
         Enable_reg:                                 out std_logic;
         Enable_cont:                                out std_logic;
         Liga_luminaria:                             out std_logic;
@@ -50,7 +51,7 @@ architecture comportamental of UC_project is
                                             else Eprox <= carrega_st;
                                             end if;
 
-                when desligado_st =>        if Sensor_presenca='1' and Potencia /= "00"
+                when desligado_st =>        if Sensor_presenca='1' and Luminosidade /= "00"
                                             then Eprox <= ligado_st;
                                             else Eprox<= desligado_st;
                                             end if;
@@ -84,6 +85,10 @@ architecture comportamental of UC_project is
         with Eatual select
         Enable_reg <= '1' when carrega_st,
                       '0' when others;
+
+        with Eatual select
+        Reset_cont <= '0' when contando_st,
+                      '1' when others;              
 
         with Eatual select
         Enable_cont <= '1' when contando_st, '0' when others;
