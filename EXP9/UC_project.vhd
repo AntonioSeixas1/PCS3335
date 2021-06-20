@@ -57,7 +57,7 @@ architecture comportamental of UC_project is
                                             end if;
                 
                 when ligado_st =>           if Luminosidade = "00"
-											then Eprox <= desligado;
+											then Eprox <= desligado_st;
 										    elsif Sensor_presenca='0'
                                             then Eprox <= contando_st;
                                             else Eprox <= ligado_st;
