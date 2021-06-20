@@ -625,7 +625,7 @@ port (
 	Confirma:			in std_logic;
 	Luminosidade:		in std_logic_vector(1 downto 0);
 	Tempo:				in std_logic_vector(3 downto 0);
-	Liga_luminaria:	out std_logic;
+	Liga_luminaria:	    out std_logic;
 	Potencia:			out std_logic_vector(1 downto 0);
 	db_state:			out std_logic_vector(2 downto 0)
 	);
