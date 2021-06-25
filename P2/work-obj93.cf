@@ -1,16 +1,16 @@
 v 4
-file . "FD_P2.vhd" "1efd54e05d5cdebef72361a9ed74ff4c8f511ec7" "20210625204540.721":
-  entity dig_jk_ff_as at 4( 107) + 0 on 23;
-  architecture behavioral of dig_jk_ff_as at 19( 395) + 0 on 24;
-  entity n74193 at 44( 974) + 0 on 25;
-  architecture behavioral of n74193 at 70( 1711) + 0 on 26;
-  entity n7485 at 172( 4184) + 0 on 27;
-  architecture behavioral of n7485 at 197( 4695) + 0 on 28;
-  entity main at 220( 5728) + 0 on 29;
-  architecture behavioral of main at 234( 5996) + 0 on 30;
+file . "FD_P2.vhd" "87c92b2b4f3e0d9d17eacc4ca95d63b1f4c8e751" "20210625204919.574":
+  entity dig_jk_ff_as at 4( 107) + 0 on 31;
+  architecture behavioral of dig_jk_ff_as at 19( 395) + 0 on 32;
+  entity n74193 at 44( 974) + 0 on 33;
+  architecture behavioral of n74193 at 70( 1711) + 0 on 34;
+  entity n7485 at 172( 4184) + 0 on 35;
+  architecture behavioral of n7485 at 197( 4695) + 0 on 36;
+  entity fd_p2 at 220( 5728) + 0 on 37;
+  architecture behavioral of fd_p2 at 234( 5998) + 0 on 38;
 file . "UC_P2.vhd" "c1905d5dc48a8cdeec1cfc14feb028aea3ff6527" "20210625201558.856":
   entity uc_p2 at 9( 383) + 0 on 11;
   architecture behavioral of uc_p2 at 24( 827) + 0 on 12;
-file . "CSR.vhd" "7a1943e677e9eb7b961671ed7dc6d243ba6cd77c" "20210625202452.685":
-  entity csr at 9( 373) + 0 on 21;
-  architecture structural of csr at 23( 750) + 0 on 22;
+file . "CSR.vhd" "7a1943e677e9eb7b961671ed7dc6d243ba6cd77c" "20210625204943.572":
+  entity csr at 9( 373) + 0 on 39;
+  architecture structural of csr at 23( 750) + 0 on 40;

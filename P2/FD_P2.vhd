@@ -221,7 +221,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
-entity main is
+entity FD_P2 is
   port (
     Saida: in std_logic;
     Reset: in std_logic;
@@ -229,9 +229,9 @@ entity main is
     Cheio: out std_logic;
     Presenca1: out std_logic;
     Presenca10: out std_logic);
-end main;
+end FD_P2;
 
-architecture Behavioral of main is
+architecture Behavioral of FD_P2 is
   signal s0: std_logic;
   signal s1: std_logic;
   signal s2: std_logic;
