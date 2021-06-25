@@ -46,7 +46,7 @@ architecture comportamental of UC_project is
             case Eatual is
                 when inicial_st =>          Eprox <= carrega_st;
 
-                when carrega_st =>            if confirma = '1'
+                when carrega_st =>          if confirma = '1'
                                             then Eprox <= desligado_st;
                                             else Eprox <= carrega_st;
                                             end if;
