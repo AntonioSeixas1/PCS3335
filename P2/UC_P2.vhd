@@ -56,9 +56,7 @@ architecture behavioral of UC_P2 is
                                                 else Eprox <= pelomenos_1_st;
                                                 end if;
                                         
-                when pelomenos_10_st =>         if Presenca_1 = '0'
-                                                then Eprox <= vazio_st;
-                                                elsif Presenca_10 = '0'
+                when pelomenos_10_st =>         if Presenca_10 = '0'
                                                 then Eprox <=  pelomenos_1_st;
                                                 elsif Presenca_15 = '1'
                                                 then Eprox <= cheio_st;
