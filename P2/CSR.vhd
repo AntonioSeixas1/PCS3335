@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------
---! @file UC_P2.vhd
+--! @file CSR.vhd
 --! @author Antonio Lago Araújo Seixas <antonioseixas00@usp.br>
 --! @author Lucas Moreira Oliveira <lucasmoreiraoliveira@usp.br>
 --! @brief meeting's room control  circuit- P2
@@ -72,3 +72,4 @@ architecture structural of CSR is
         );
 
 end architecture;
+
